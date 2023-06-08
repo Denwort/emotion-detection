@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento Facial</title>
+    <script src="apis/face-api.min.js" defer></script>
+    <script src="apis/progressbar.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-emotion="">
+    <div id="arriba">
+        <p id="texto-arriba">Laboratorio de Inteligencia Artificial</p>
+    </div>
+    <div id="contenedor" width="920" height="690">
+        <div id="container" >
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 920 690">
+                <path id="border-path-background" fill="none" fill-opacity="1" stroke-width="12" stroke="white" 
+                d="M 460,5 H 895 a20,20 0 0,1 20,20 
+                V 665 a20,20 0 0,1 -20,20
+                H 25 a20,20 0 0,1 -20,-20
+                V 25 a20,20 0 0,1 20,-20
+                H 460"/>
+                <path id="border-path" fill-opacity="0" stroke-width="12.5" stroke="#a834d2" 
+                d="M 460,5 H 895 a20,20 0 0,1 20,20 
+                V 665 a20,20 0 0,1 -20,20
+                H 25 a20,20 0 0,1 -20,-20
+                V 25 a20,20 0 0,1 20,-20
+                H 460"/>
+            </svg>
+          </div>
+        <video id="video" autoplay muted width="920" height="690"></video>
+    </div>
+    <div id="interactivos" width="600" height="690">
+        <div id="robot-background"></div>
+        <img id="robot" src="gifs/none.gif" class="asistente" src=""> </img>
+        <audio id="reproductor"></audio>
+    </div>
+    <footer id="abajo">
+        <p id="texto-abajo">Recomendación de canciones basadas en emociones</p>
+    </footer>
+</body>
+</html>
+

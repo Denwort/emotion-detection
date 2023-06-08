@@ -1,0 +1,132 @@
+body {
+    margin: auto;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+    'header header'
+    'left right'
+    'footer footer';
+    gap: 30px;
+    grid-template-rows: min-content min-content min-content;
+
+    align-items: center;
+    justify-content: center;
+    
+    
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    transition: background 1s;
+    
+}
+
+#video {
+    border-radius: 30px;
+    border: none;
+    z-index: -1;
+}
+
+#contenedor {
+    grid-area: left;
+    display: grid;
+    opacity: 0;
+    transition: opacity 1s; 
+    border-width: 5px;
+}
+
+#interactivos {
+    grid-area: right;
+    display: grid;
+}
+
+#robot {
+    z-index: 1;
+    padding: 50px;
+    width: 500px ;
+    height: 590px;
+    border-radius: 25px;
+    background-color: black;
+    transition: background 1s;
+}
+
+canvas {
+    position:absolute;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    transition: background 1s;
+}
+  
+#myBar {
+    width: 0%;
+    height: 30px;
+    background-color: greenyellow;
+    border-radius: 15px;
+}
+
+#videocover {
+    position: absolute;
+    display: block;
+}
+
+
+
+
+/* Para la barra de progreso */
+#container {
+    position: absolute;
+    width: 920px;
+    height: 690px;
+}
+
+#border-path {
+    transition: stroke 1s;
+    z-index: 2 ;
+}
+
+#border-path-background {
+    transition: stroke 1s;
+    z-index: 1;
+    opacity: 100%;
+}
+
+#robot-background {
+    position: absolute;
+    width: 600px;
+    height: 690px;
+    border-radius: 30px;
+    transition: background 1s;
+    color: white;
+}
+
+
+
+#arriba {
+    grid-area: header;
+    /* Cambiar padding para que se vea más abajo*/
+    padding-top: 70px;
+}
+
+#texto-arriba {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+#abajo {
+    grid-area: footer;
+}
+
+#texto-abajo {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: Helvetica;
+    margin: 0;
+}
