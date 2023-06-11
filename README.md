@@ -7,3 +7,9 @@ Hacemos una aplicación de reconocimiento facial usando la librería [face-api](
 
 ## Descripcion
 EL bot se activa cuando reconoce un rostro a traves de la camara. Procede a detectar la emocion de la persona. Cuando ha recolectado suficiente informacion, menciona la emocion que ha detectado y recomienda una cancion dependiendo de ella. Luego de reproducir la cancion, vuelve a intentar detectar nuevas emociones.
+
+## How to run
+Abrir el proyecto en VSCode
+Descargar el complemento de VSCode: Live Server (Ritwick Dey)
+Click derecho en index.hmtl
+Open with Live Server
